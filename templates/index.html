@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Library for linkedin icon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-default" style="background-color: white">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" ><i class="fa fa-home"></i></a>
+            </div>
+    
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../static/pdfs/JuZhangResume.pdf">Resume <span class="sr-only">(current)</span></a></li>
+                
+                <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li> -->
+
+            </ul>
+            <form class="navbar-form navbar-left" method="get" action="https://www.google.com/search">
+                <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="q">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <a class="navbar-brand" href="https://github.com/juzhangdata" ><i class="fa fa-github"></i></a>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/ju-zhang-anna-39344644/" ><i class="fa fa-linkedin"></i></a>
+                
+                <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li> -->
+
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <style>
+        .navbar {
+        margin-bottom: 0px;
+    }
+    </style>
+
+    <div>
+        <img src="../static/images/4_header.jpg" alt="Header" style="width:100%;">
+        <font id="typewriter" style="text-align:center" class="centered" size="20" color="black">Hi. This is Anna.</font>
+    </div>
+
+    <style>
+    .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    </style>
+
+    <script>
+        var str = "<p style='background-color: white'> Hi. This is <span style='color:red;'>Anna</span>.</p>",
+            i = 0,
+            isTag,
+            text;
+
+        (function type() {
+            text = str.slice(0, ++i);
+            if (text === str) return;
+
+            document.getElementById('typewriter').innerHTML = text;
+
+            var char = text.slice(-1);
+            if( char === '<' ) isTag = true;
+            if( char === '>' ) isTag = false;
+
+            if (isTag) return type();
+            setTimeout(type, 80);
+        }());
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <div class="page-header"  style="text-align:center">
+        <font  size="20" color="black"><span style="color: red">P</span>rojects</font>
+    </div>
+
+    <div class="container-fluid">  
+        <div class="row" class="row row-eq-height">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                <img src="../static/images/2_hermes.jpg" alt="...">
+                <div class="caption">
+                    <h3>
+                        Fashionisa                       
+
+                    </h3> 
+                    <p>Image recognition and dress recommendation classification using machine learning, such as tensorflow, SVC, grid search, and deep learning.</p>
+                    <p>
+                        <a href="https://all-about-fashion-app.herokuapp.com/" class="btn btn-primary" role="button">Website</a>
+                        <a href="https://github.com/juzhangdata/fashion_project" class="btn btn-default" role="button">Github</a>
+                 
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                <img src="../static/images/3_refugee.jpg" alt="...">
+                <div class="caption">                    
+
+                    <h3>
+                        European Refugee Crisis
+                    </h3>
+                    <p>
+                        Visualizd refugee influx to European countries from 2013 to 2017. Used plotly, D3.js, Flask, Heroku and SQL database.
+                    </p>
+                    <p>
+                        <!-- <a href="#" class="btn btn-primary" role="button"></a> -->
+                        <a href="https://github.com/juzhangdata/Refugee_Project" class="btn btn-default" role="button">Github</a>
+                    </p>                    
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                <img src="../static/images/6_biodiversity.jpg" alt="...">
+                <div class="caption">
+                    <h3>Biodiversity</h3>
+                    <p>Queried SQL datbase and created interactive charts for biodiversity of microbes. Used SQLAlchemy and D3.</p>
+                    <p><a href="https://anna-belly-button-biodiversity.herokuapp.com/" class="btn btn-primary" role="button">Website</a> <a href="https://github.com/juzhangdata/belly_button_biodiversity" class="btn btn-default" role="button">Github</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More projects -->
+    <br>
+    <br>
+    <div class="page-header"  style="text-align:center">
+        <font  size="20" color="black"><span style="color: red">M</span>ore</font>
+    </div>
+    <p style="text-align: center">
+
+        <a class="btn btn-primary btn-lg" href="https://github.com/juzhangdata?tab=repositories" role="button">Other Projects</a>
+    </p>
+    <p align="center"><br>Copyright <span style="color:red">&#169;</span> 2018 Ju (Anna) Zhang</p>
+    <img src="../static/images/8_more_projects_2.jpg" alt="Header" style="width:100%;">
+    
+</body>
+</html>
